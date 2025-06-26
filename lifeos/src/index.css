@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to bottom right, #ebf8ff, #ffffff, #faf5ff);
+  color: #1a202c;
+}
+
+input, select, textarea {
+  transition: all 0.2s ease;
+  outline: none;
+  background-color: #1a202c; /* dark:bg-gray-900 */
+  color: #ffffff; /* dark:text-white */
+}
+
+input:focus, select:focus, textarea:focus {
+  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.5); /* ring-2 ring-blue-400 */
+}
+
+button {
+  transition: all 0.2s ease;
+  transform: scale(1);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.dark .card {
+  background-color: #2d3748;
+}
+
